@@ -4,6 +4,7 @@ body{
   padding: 20px;
   color: white;
   font-size: small;
+  text-align: justify;
 }
 
 /* Responsive Styles */
