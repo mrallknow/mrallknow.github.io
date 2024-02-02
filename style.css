@@ -1,0 +1,287 @@
+
+body{
+  background-color: #212529;
+  padding: 20px;
+  color: white;
+  font-size: small;
+}
+.logo {
+  width: 90%;
+  display: block;
+  margin: auto;
+  padding-bottom: 50px;
+}
+/* Container Styles */
+.container {
+display: flex;
+flex-direction: column;
+font-size: small;
+
+}
+
+/* Section Styles */
+.section {
+margin-bottom: 20px;
+}
+
+.section-2{
+text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 768px) {
+.container {
+    flex-direction: row;
+}
+.section {
+    flex: 1;
+    margin-right: 20px;
+}
+.section:last-child {
+    margin-right: 0;
+}
+}
+/* Header styling */
+
+
+
+/* Navbar Styling */
+.navbar {
+  position: -webkit-sticky;
+  position: sticky; /* Make nav sticky */
+  top: 0; /* Fixed at top when sticky */
+  z-index: 100; /* Ensure nav stays above content */
+  background-color: white; /* Transparent background for seamless look */
+  text-align: center; /* Center align elements */
+  padding: 10px; /* Add some padding */
+}
+
+.navbar.sticky {
+  top: 0; /* Fixed at top when sticky */
+}
+
+.navbar:not(.sticky) {
+  top: 100%; /* Position nav below logo initially */
+  transition: top 0.3s ease-in-out; /* Add smooth transition for sticky effect */
+}
+
+.nav-list {
+  list-style: none; /* Remove default list styling */
+  margin: 0; /* Remove default list margins */
+  padding: 0; /* Remove default list padding */
+}
+
+.nav-list li {
+  display: inline-block; /* Display list items horizontally */
+  margin: 0 10px; /* Add spacing between items */
+}
+
+/* Optional styling for NES.css compatibility */
+.navbar,
+.nav-list li a {
+  font-family: "Press Start 2P"; /* Use NES.css font */
+  text-decoration: dashed; /* Remove underline from links */
+  color: black; /* Set link color */
+  border-bottom: 4px solid black;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack logo and nav vertically */
+    align-items: center; /* Center content on mobile */
+  }
+
+  .logo {
+    margin-bottom: 10px; /* Add space between logo and nav on mobile */
+  }
+
+  .nav-list li {
+    margin: 5px 0; /* Reduce spacing between nav items on mobile */
+  }
+}
+
+
+/* Essay styling */
+
+.essays-list {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.essay-section-title {
+  font-family: "Press Start 2P";
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.essays {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.essay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.essay-content {
+  width: 50%;
+}
+
+.essay-title {
+  font-family: "Press Start 2P";
+  margin-bottom: 5px; /* Optional margin for separation */
+}
+
+.essay-date {
+  font-size: 0.8em;
+  font-family: "Press Start 2P";
+  color: #888;
+}
+
+.essay-button {
+  width: 25%;
+  text-align: center;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  font-family: "Press Start 2P";
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.essay-button:hover {
+  background-color: #ddd;
+}
+
+.view-more{
+  width: 25%;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .essay {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content on mobile */
+    font-size: smaller;
+  }
+
+  .essay-content {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .essay-button {
+    margin-top: 10px; /* Add space between content and button */
+    width: 100%;
+  }
+
+  .view-more{
+      width: 50%;
+    }
+}
+
+
+/* Mini-apps section styling */
+
+/* Mini-apps section styling */
+
+.mini-apps-section {
+  padding: 40px;
+  display: flex;
+}
+
+.section-title {
+  font-family: "Press Start 2P";
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.mini-apps-intro,
+.mini-apps-showcase {
+  width: 50%;
+}
+
+.mini-apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 20px;
+}
+
+.mini-app-icon {
+  text-align: center;
+  cursor: pointer;
+}
+
+.mini-app-icon img {
+  width: 100px;
+  height: 100px;
+  image-rendering: crisp-edges;
+  border-radius: 20px;
+}
+
+.mini-app-icon h3 {
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+
+.mini-app-icon:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  
+  .mini-apps-section {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 0;
+  }
+
+  .mini-apps-intro,
+  .mini-apps-showcase {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .mini-apps-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust grid for smaller screens */
+  }
+}
+
+
+
+/* My-picks section styling */
+
+.my-picks-section{
+text-align: center;
+}
+.my-picks-section-title {
+font-family: "Press Start 2P";
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+.my-picks-subheading{
+padding-left: 20%;
+padding-right: 20%;
+}
+
+@media (max-width: 768px) {
+  
+  .my-picks-section{
+      text-align: center;
+      font-size: smaller;
+    }
+    .my-picks-section-title {
+      font-family: "Press Start 2P";
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    
+    .my-picks-subheading{
+      padding: 0;
+    }
+}
