@@ -5,6 +5,20 @@ body{
   color: white;
   font-size: small;
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  body{
+    padding: 0px;
+    
+  }
+
+  .logo {
+    width: 100%;
+    padding-top: 50px;
+  }
+}
+
 .logo {
   width: 90%;
   display: block;
@@ -180,7 +194,7 @@ text-align: center;
   }
 
   .view-more{
-      width: 50%;
+      width: 100%;
     }
 }
 
