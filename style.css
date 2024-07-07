@@ -299,3 +299,22 @@ padding-right: 20%;
       padding: 0;
     }
 }
+
+
+/* Subscribe form */
+.subscribe-form{
+  background-color:#212529; 
+  width: 70%; 
+  min-width: 70%; 
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  
+  .subscribe-form{
+    background-color:#212529; 
+    width: 100%; 
+    margin: auto;
+  }
+
+}
